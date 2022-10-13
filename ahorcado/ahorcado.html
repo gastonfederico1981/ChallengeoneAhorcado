@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Ahorcado de Gastón Carranza</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="add_to_me">
+      <h1>Ahorcado</h1>
+        <br>
+      <!-- <p id="add_after_me">Juego del Ahorcado</p> -->
+    </div>
+<center>
+  <div class="form" id="formperdiste" style="display: none;">
+    <img src="img\ahorca5.png"
+    
+     id="imgj" class="img2"><br />
+    <div class="oculto" id="oculto2" style="display: none;">¡Perdiste!</div><br /><br /> 
+    La palabra era : <input type="text" id="palabra" value=""><br /><br />
+    <button type="submit" class="botona" onClick="document.location.reload(true)" name="btna" id="btnan">Jugar de Nuevo</button><br /><br />
+  
+  </div>
+
+  <div class="form" id="formganaste" style="display: none;">
+    <img src="img\ahorca5.png" id="imgj" class="img2"><br /><br /><br />
+    <button type="submit" class="botona" onClick="document.location.reload(true)"  name="btna" id="btnan">Jugar de Nuevo</button><br /><br />
+
+    <div class="oculto" id="oculto" >¡Ganaste!</div><br /><br />
+  </div>
+
+
+  <div class="form" id="formadd" style="display: none;">
+    <img src="img\ahorca5.png" id="imgj" class="img"><br />
+    <div class="oculto" id="oculto" style="display: none;">¡Agrega palabras!</div><br /><br /><br /><br />
+    <button type="submit" class="botona" onclick="document.location.reload(true)" name="btna" id="btna">Volver</button><br /><br />
+    <input type="text" id="texto" value="" required/> <button type="submit" class="botona" onclick="guardar()" name="btna" id="btna">Guardar Palabra</button>
+    <div class="oculto" id="oculto3" style="display: none;">¡Palabra Guardada!</div><br /><br />
+    <div class="oculto" id="oculto4" style="display: none;">¡Campo Vacio!</div><br /><br />
+  </div>
+
+
+  
+  <div class="" id="formhome" >
+    <img src="img\ahorca5.png" id="imgj" class="img2"><br /><br />
+    <div class="oculto" id="oculto" style="display: none;">¡Jugar!</div><br /><br />
+    <button type="submit" class="botona" onclick="jugar('a')" name="btna" id="btna">Jugar</button>
+    <button type="submit" class="botona" onclick="palabra('a')" name="btna" id="btna">Agregar Palabras</button><br /><br />
+  </div>
+
+    <div class="form" id="form" style="display: none;">
+      <br /><br />
+        <img src="img\ahorca5.png" id="img" class="img">
+      <br /><br />
+
+      <button type="submit" class="boton" onclick="f_a('a');pintar('a')" name="btna" id="btna">A</button>
+      <button type="submit" class="boton" onclick="f_a('b')" name="btnb" id="btnb">B</button>
+      <button type="submit" class="boton" onclick="f_a('c')" name="btnc" id="btnc">C</button>
+      <button type="submit" class="boton" onclick="f_a('d')" name="btnd" id="btnd">D</button>
+      <button type="submit" class="boton" onclick="f_a('e')" name="btne" id="btne">E</button>
+      <button type="submit" class="boton" onclick="f_a('f')" name="btnf" id="btnf">F</button>
+      <button type="submit" class="boton" onclick="f_a('g')" name="btng" id="btng">G</button>
+      <button type="submit" class="boton" onclick="f_a('h')" name="btnh" id="btnh">H</button>
+      <button type="submit" class="boton" onclick="f_a('i')" name="btni" id="btni">I</button>
+      <button type="submit" class="boton" onclick="f_a('j')" name="btnj" id="btnj">J</button>
+      <button type="submit" class="boton" onclick="f_a('k')" name="btnk" id="btnk">K</button>
+      <button type="submit" class="boton" onclick="f_a('l')" name="btnl" id="btnl">L</button>
+      <button type="submit" class="boton" onclick="f_a('m')" name="btnm" id="btnm">M</button
+      ><br /><br />
+      <button type="submit" class="boton" onclick="f_a('n')" name="btnn" id="btnn">N</button>
+      <button type="submit" class="boton" onclick="f_a('o')" name="btno" id="btno">O</button>
+      <button type="submit" class="boton" onclick="f_a('p')" name="btnp" id="btnp">P</button>
+      <button type="submit" class="boton" onclick="f_a('q')" name="btnq" id="btnq">Q</button>
+      <button type="submit" class="boton" onclick="f_a('r')" name="btnq" id="btnr">R</button>
+      <button type="submit" class="boton" onclick="f_a('s')" name="btns" id="btns">S</button>
+      <button type="submit" class="boton" onclick="f_a('t')" name="btnt" id="btnt">T</button>
+      <button type="submit" class="boton" onclick="f_a('u')" name="btnu" id="btnu">U</button>
+      <button type="submit" class="boton" onclick="f_a('v')" name="btnv" id="btnv">V</button>
+      <button type="submit" class="boton" onclick="f_a('w')" name="btnw" id="btnw">W</button>
+      <button type="submit" class="boton" onclick="f_a('x')" name="btnx" id="btnx">X</button>
+      <button type="submit" class="boton" onclick="f_a('y')" name="btny" id="btny">Y</button>
+      <button type="submit" class="boton" onclick="f_a('z')" name="btnz" id="btnz">Z</button>
+    </div>
+</center>
+<br />
+Proyecto realizado por <a href="">Gastón Carranza</a> 
+  <br/> <br/></body>
+  
+  <script src="main.js"></script>
+</html>
